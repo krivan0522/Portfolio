@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+hr {
+    border: groove #EAF6F6 1px;
+    border-bottom: none;
+    width: 50%;
+}
+
+#Nav nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:15px;
+    padding-left: 8%;
+    padding-right: 8%; 
+    z-index: 1000;
+    width:100vw;
+}
+.hide{
+    display: none;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    color: red;
+}
+#Nav nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#Nav nav ul li{
+    padding: 10px 25px;
+}
+#sideNav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #040f0e;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+#sideNav nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+#sideNav nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 1000;
+    cursor: pointer;
+    transform: translateY(-14px);
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 891px) {
+    #Nav nav ul li{
+        padding: 5px 15px;
+    }
+    
+}
+@media screen and (max-width: 796px) {
+    #Nav nav ul{
+        display: none;
+    }
+}
+/* @media screen and (max-width: 575px) {
+    #Nav nav {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+} */
+@media screen and (max-width: 475px) {
+    .logo{
+        display: none;
+    }
+    .hide{
+        display: flex;
+    }
+}
+/* @media screen and (max-width: 400px) {
+    #Nav nav {
+        padding-left:1%;
+        padding-right:1%;
+    }
+    #Nav nav ul li{
+        font-size: small;
+    }
+}
+     */
+#Nav nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#Nav nav ul li a:hover{
+    color: #f9004d;
+    transition: 0.4s;
+}
+#bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.Krish{
+    display: flex;
+    /* background-color: #f9004d; */
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 77px auto;
+    justify-content: space-around;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.infopic img{
+    width: 200px;
+    height: 58vh;
+  
+}
+.myinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.first{
+    font-size: 2.5rem;
+}
+.second{
+    font-size: 3.5rem;
+}
+.third{
+    font-size: 1.75rem;
+}
+.MyProject,.skill{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4XF2o_f3UxQykOajGnVM6iLzHRjFdc4W3lP5j0ElhG-4wgVpQfjfZcKwrt9ixOIsLR8&usqp=CAU);
+    background-size: cover;
+    
+}
+#heading{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.cards{
+    display: flex;
+    margin-left: 34px;
+    flex-wrap: wrap;
+}
+.card1{
+    border:2px solid brown;
+    border-radius: 12px;
+    width: 32%;
+    text-align: center;
+    margin: 5px;
+    background-color: #d1d1d1;
+}
+.card1 img{
+    /* height: 160px; */
+    margin: auto;
+    display: block;
+    height:100px;
+    justify-self: center;
+    
+}
+.btn{
+    padding: 6px 15px;
+    border: 2px solid rgb(81, 30, 30);
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+.item1{
+    grid-area: i1;
+}
+.item2{
+    grid-area: i2;
+}
+.item3{
+    grid-area: i3;
+}
+.item4{
+    grid-area: i4;
+}
+.item5{
+    grid-area: i5;
+   
+   
+    
+
+}
+.item6{
+    grid-area: i6;
+}
+
+.head{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    grid-template-areas:'i1 i2';
+}
+.achievement{
+    display: grid;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    
+    grid-template-areas: 
+    'i3 i4 i5'
+    'i6 i6 i5'
+    ;
+}
+.achievement > div,.head > div{
+    background-color: rgba(233, 233, 233, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size:30px;
+  border: 2px solid rgb(175, 48, 48);
+  border-radius: 12px;
+  
+}
+
+.html,
+.css,
+.java,
+.C,
+.isc,
+.JEE{
+    height: 100px;
+}
+
+.contactme{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4XF2o_f3UxQykOajGnVM6iLzHRjFdc4W3lP5j0ElhG-4wgVpQfjfZcKwrt9ixOIsLR8&usqp=CAU);
+    background-size:cover;
+    
+}
+.cform h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.cform form{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credential{
+    padding: 10px;
+}
+#sub{
+    margin: 10px;
+    font-size: 14px;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+#warning{
+    font-size: 10px;
+    opacity :0.7;
+}
+input[type=tel]{
+    width: 400px;
+}
+input[type=text]{
+    width: 400px;
+}
+input[type=email]{
+    width: 400px;
+}
+textarea{
+    width:400px;
+    padding: 12px;
+    resize: vertical;
+}
+@media screen and (max-width: 815px) {
+    .achievement > div,.head > div{
+        
+        font-size:20px;
+       
+      }
+      .isc{
+          width:90%;
+      }
+      .myinfo{
+        padding-left: 40px;
+    }
+    
+    .card1{
+        width:100%;
+    }
+    .cards{
+        margin-left:10px;
+        margin-right:10px;
+    }
+   
+    
+}
+@media screen and (max-width: 700px) {
+    .achievement > div,.head > div{
+        
+        font-size:20px;
+       
+      }
+      .isc{
+          width:90%;
+      }
+      .myinfo{
+        padding-left: 40px;
+    }
+    
+    .card1{
+        width:100%;
+    }
+    .cards{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .achievement > div,.head > div{
+        
+        font-size:20px;
+       
+      }
+      .isc{
+          width:90%;
+      }
+      .myinfo{
+        padding-left: 40px;
+    }
+    
+    .card1{
+        width:100%;
+    }
+    .cards{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    
+}
+@media screen and (max-width: 475px) {
+    .achievement > div,.head > div{
+        
+        font-size:20px;
+       
+      }
+      .isc{
+          width:90%;
+      }
+      .myinfo{
+        padding-left: 40px;
+        width:80%;
+    }
+    .infopic img{
+        width:100%;
+    }
+    .card1{
+        width:100%;
+    }
+    .cards{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    input[type=tel]{
+        width: 100%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+    }
+    textarea{
+        width:100%;
+        padding: 12px;
+        resize: vertical;
+    }
+}
+@media screen and (max-width: 400px) {
+    .achievement > div,.head > div{
+        
+      font-size:20px;
+     
+    }
+    .isc{
+        width:90%;
+    }
+    .myinfo{
+        padding-left: 40px;
+        width:80%;
+        
+    }
+    .infopic img{
+        width:100%;
+    }
+    .card1{
+        width:100%;
+    }
+    .cards{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    input[type=tel]{
+        width: 100%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+    }
+    textarea{
+        width:100%;
+        padding: 12px;
+        resize: vertical;
+    }
+}
